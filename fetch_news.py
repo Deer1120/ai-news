@@ -16,7 +16,7 @@ ROOT = Path(__file__).parent
 SEEN_FILE = ROOT / "seen.json"
 OUT_DIR = ROOT / "news"
 SEEN_TTL_DAYS = 30          # seen 记录保留天数,防止文件无限膨胀
-HN_MIN_POINTS = 80          # HN 热度门槛
+HN_MIN_POINTS = 150          # HN 热度门槛
 HN_HOURS = 24               # HN 只看最近 24 小时
 
 # ---------------- 信息源 ----------------
@@ -25,10 +25,7 @@ RSS_SOURCES = {
     "OpenAI": "https://openai.com/news/rss.xml",
     "Google DeepMind": "https://deepmind.google/blog/rss.xml",
     "HuggingFace": "https://huggingface.co/blog/feed.xml",
-    "arXiv cs.AI": "https://rss.arxiv.org/rss/cs.AI",
-    "arXiv cs.CL": "https://rss.arxiv.org/rss/cs.CL",
-    "Simon Willison": "https://simonwillison.net/atom/everything/",
-    "r/LocalLLaMA": "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day",
+    "Simon Willison": "https://simonwillison.net/atom/everything/"
 }
 
 # HN 标题关键词过滤(小写匹配)
